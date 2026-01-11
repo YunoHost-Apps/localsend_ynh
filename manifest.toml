@@ -7,7 +7,7 @@ name = "LocalSend"
 description.en = "Alternative to AirDrop"
 description.fr = "Alternative à AirDrop"
 
-version = "2026.01.11~ynh1"
+version = "2026.01.12~ynh1"
 
 maintainers = ["eric_G"]
 
