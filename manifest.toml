@@ -7,7 +7,7 @@ name = "LocalSend"
 description.en = "Alternative to AirDrop"
 description.fr = "Alternative à AirDrop"
 
-version = "2026.01.11~ynh1"
+version = "2026.01.12~ynh1"
 
 maintainers = ["eric_G"]
 
@@ -26,9 +26,9 @@ multi_instance = true
 ldap = false
 sso = false
 
-disk = "50M"
-ram.build = "50M"
-ram.runtime = "50M"
+disk = "500M"
+ram.build = "1200M"
+ram.runtime = "100M"
 
 [install]
     [install.domain]
