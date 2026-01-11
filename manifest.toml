@@ -1,0 +1,58 @@
+#:schema https://raw.githubusercontent.com/YunoHost/apps/main/schemas/manifest.v2.schema.json
+
+packaging_format = 2
+
+id = "localsend"
+name = "LocalSend"
+description.en = "Alternative to AirDrop"
+description.fr = "Alternative à AirDrop"
+
+version = "2026.01.11~ynh1"
+
+maintainers = ["eric_G"]
+
+[upstream]
+license = "Apache-2.0"
+website = "https://localsend.org/"
+demo = "https://web.localsend.org/"
+code = "https://github.com/localsend/web"
+
+[integration]
+yunohost = ">= 12.1.38"
+helpers_version = "2.1"
+architectures = "all"
+multi_instance = true
+
+ldap = false
+sso = false
+
+disk = "50M"
+ram.build = "50M"
+ram.runtime = "50M"
+
+[install]
+    [install.domain]
+    type = "domain"
+
+    [install.init_main_permission]
+    type = "group"
+    default = "visitors"
+
+[resources]
+
+    [resources.sources]
+
+    [resources.sources.main]
+    url = "https://github.com/localsend/web/archive/24c69991613fb0210156398f434675629999e73a.tar.gz"
+    sha256 = "95fa23dfb644a970ba99012dcb87b7f02acc75d5c5d4f1a0281fef5effc5f5aa"
+    autoupdate.strategy = "latest_github_tag"
+
+    [resources.system_user]
+
+    [resources.install_dir]
+
+    [resources.permissions]
+    main.url = "/"
+
+    [resources.nodejs]
+    version = "22"
