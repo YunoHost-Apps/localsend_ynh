@@ -7,7 +7,7 @@ name = "LocalSend"
 description.en = "Alternative to AirDrop"
 description.fr = "Alternative à AirDrop"
 
-version = "2026.01.12~ynh1"
+version = "2026.01.30~ynh1"
 
 maintainers = ["eric_G"]
 
@@ -43,8 +43,8 @@ ram.runtime = "100M"
     [resources.sources]
 
     [resources.sources.main]
-    url = "https://github.com/localsend/web/archive/24c69991613fb0210156398f434675629999e73a.tar.gz"
-    sha256 = "95fa23dfb644a970ba99012dcb87b7f02acc75d5c5d4f1a0281fef5effc5f5aa"
+    url = "https://github.com/localsend/web/archive/ea5d55d34db2f21b84bf0ffe39d6342013b4ecd8.tar.gz"
+    sha256 = "7422fa65c97e921b0a94f703df134c6203bea75234b7ee1a9dc2f916725c5f45"
     autoupdate.strategy = "latest_github_commit"
 
     [resources.system_user]
